@@ -1,0 +1,148 @@
+.home-header {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Kaushan Script", cursive;
+}
+.home-heading:hover,
+.home-sub-h:hover {
+  color: black;
+}
+body {
+  font-family: "Shantell Sans", cursive;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+a:hover{
+  color: inherit;
+}
+#Contact-Us {
+  height: 100vh;
+  width: 100vw;
+}
+.img-part {
+  height: 70%;
+  margin: 2rem;
+}
+.home-container {
+  background: rgb(174, 59, 236);
+}
+.highlight {
+  background: white;
+  width: 100vw;
+  height: 80vh;
+}
+.high-header {
+  padding-top: 20px;
+  font-family: "Kaushan Script", cursive;
+}
+.home-sub-high {
+  margin-top: 30px;
+  color: #ffa500;
+  text-align: center;
+}
+
+.first-text {
+  color: #ffa500;
+}
+.first-text-w {
+  cursor: pointer;
+}
+.first-text-w:hover {
+  color: black;
+}
+.first-text:hover {
+  color: white;
+}
+.header-btn:hover {
+  border-color: white;
+}
+.landing-page-content {
+  text-align: center;
+}
+.content1 {
+  margin: 2.2rem;
+  font-family: "Shantell Sans", cursive;
+  font-size: 1.6rem;
+  color: white;
+}
+.home-heading {
+  padding: 0px;
+  margin: 0px;
+  font-size: 35px;
+  margin-left: 30px;
+  color: white;
+  cursor: pointer;
+}
+.home-sub-h {
+  text-align: left;
+  font-size: 24px;
+  margin-left: 10px;
+  color: white;
+  font-family: "Kaushan Script", cursive;
+  cursor: pointer;
+}
+
+.btns {
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 10px 20px 10px 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 24px;
+  border-color: #ffa500;
+  border-radius: 8px;
+  border-width: 4px;
+  cursor: pointer;
+}
+.btns:hover {
+  background: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+#about-btn {
+  padding: 5px 10px;
+}
+#about-btn:hover {
+  color: black;
+}
+.footer-section {
+  /* background: rgb(174, 59, 236); */
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+.opr {
+  background: rgb(174, 59, 236);
+  color: white;
+  border-color: #ffa500;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  box-shadow: none;
+}
+.footer-section .btn-container {
+  display: block;
+}
+
+.footer-section .footer-text {
+  clear: both;
+}
+.btn-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.opr:hover {
+  color: black;
+  border-color: #ffa500;
+  background-color: #ffa500;
+  box-shadow: #ffa500 !important;
+}

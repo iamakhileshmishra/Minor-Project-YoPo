@@ -1,0 +1,30 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  border: black;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+textarea.form-control {
+  height: 10rem;
+}
+
+@media screen and (max-width: 576px) {
+  .contact-form {
+    max-width: 100%;
+  }
+}
