@@ -131,19 +131,17 @@ export default function Home() {
       </section>
       <div className="footer-section">
         <div className="btn-container">
-          <Button variant="outline-primary" className="opr ">
+          <Button variant="outline-primary" className="btn btns opr">
             Open Report
           </Button>
-          <Button variant="outline-primary" className="opr ">
+          <Button variant="outline-primary" className=" btn btns opr">
             Open Presentation
           </Button>
-          <Button variant="outline-primary" className="opr">
+          <Button variant="outline-primary" className="btn btns opr">
             Open Repository
           </Button>
         </div>
-        <div className="footer-text">
-          {/* <p>Made With ❣️& ☕</p> */}
-        </div>
+        <div className="footer-text">{/* <p>Made With ❣️& ☕</p> */}</div>
       </div>
     </div>
   );

@@ -7,8 +7,13 @@
 #pose-dropdown-btn {
     width: 400px;
 }
-
-
+.drdw{
+    background-color: #ffa500;
+}
+.drdw:hover{
+    background-color: #ffa500;
+    color: black;
+}
 
 .dropdown-container {
     display: flex;
@@ -27,6 +32,7 @@
 }
 
 .dropdown-custom-menu {
+    cursor: pointer;
     overflow: scroll;
     height: 40vh;
     scrollbar-width: none;
