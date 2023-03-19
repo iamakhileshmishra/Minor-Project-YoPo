@@ -6,6 +6,11 @@
 .dropdown {
   padding: 20px;
 }
+.dd-list{
+  text-align: center;
+  color: white;
+  margin: 0px;
+}
 .secondary-btn {
   position: relative;
   left: 45%;

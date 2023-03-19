@@ -276,7 +276,15 @@ function Yoga() {
 
   return (
     <div className="yoga-container">
-      <DropDown className="dropdown"
+      <h2 className="home-heading">
+        <a href="/">
+          <img src="./YoPo-logo.png" alt="Logo" height="30px"></img>
+          <span className="first-text">Yo</span>Po
+        </a>
+      </h2>
+      <h4 className="dd-list">Poses:</h4>
+      <DropDown
+        className="dropdown"
         poseList={poseList}
         currentPose={currentPose}
         setCurrentPose={setCurrentPose}

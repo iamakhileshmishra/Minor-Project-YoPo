@@ -25,7 +25,7 @@ return (
                         <p className="dropdown-item-1">{pose}</p>
                         <img 
                             src={poseImages[pose]}
-                            className="dropdown-img"
+                            className="dropdown-img"alt=''
                         />
                         
                     </div>

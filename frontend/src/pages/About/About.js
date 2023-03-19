@@ -1,6 +1,10 @@
 import React from "react";
 
 import "./About.css";
+import { projdesc, DevData } from "../../utils/data";
+import { Container, Row, Col } from "react-bootstrap";
+
+import DevCard from "../../components/DevCard/DevCard";
 
 export default function About() {
   return (
@@ -11,28 +15,71 @@ export default function About() {
           <span className="first-text">Yo</span>Po
         </a>
       </h2>
-      <h1 className="about-heading">About</h1>
-      <div className="about-main">
-        <p className="about-content">
-          This is an realtime AI based Yoga Trainer which detects your pose and
-          tell how well you are doing. This AI will first predicts keypoints or
-          coordinates of different parts of the body(basically where they are
-          present in an image) and then it will use another classification model
-          to classify the poses if someone is doing a pose and if AI detects
-          that pose more than 95% probability and then it will notify you are
-          doing correctly(by making virtual skeleton green).
-        </p>
-        <div className="developer-info">
-          <h4>About Developer</h4>
-          <p className="about-content">
-            <ol>
-              <li>Akhilesh Kumar Mishra 2020UGCS053</li>
-              <li>Gyan Ujjwal 2020UGCS001</li>
-              <li>Hemant Naik 2020UGCS013</li>
-            </ol>
-          </p>
+      <h5 className="about-heading">
+        <span className="first-text">About</span>{" "}
+        <span className="first-text-w">Us</span>
+      </h5>
+      <hr className="rule"></hr>
+      <Container className="about-nit text-center">
+        <Row>
+          <Col>
+            <div className="project-desc">{projdesc}</div>
+          </Col>
+          <Col>
+            {" "}
+            <img className="nit-logo" src="nit-logo.png" alt="nit-logo"></img>
+          </Col>
+        </Row>
+      </Container>
+      <hr className="rule"></hr>
+      <h5 className="about-heading">
+        <span className="first-text">About</span>{" "}
+        <span className="first-text-w">Faculty</span>
+      </h5>
+      <Container className="about-faculty">
+        <div className="prof-img text-center">
+          <img
+            src="faculty.jpeg"
+            alt="faculty-pic"
+            height={"200px"}
+            width={"200px"}
+          ></img>
         </div>
-      </div>
+        <div className="prof-details">
+          <h5 className="text-center">
+            <a
+              href="https://www.nitjsr.ac.in/people/profile/CS108"
+              rel="noreferrer"
+              target={"_blank"}
+            >
+              Dr. Mantosh Biswas
+            </a>
+          </h5>
+          <h5 className="text-center">Assistant Professor </h5>
+          <h5 className="text-center">Computer science & Engineering </h5>
+        </div>
+      </Container>
+      <hr className="rule"></hr>
+      <h5 className="about-heading">
+        <span className="first-text">About</span>{" "}
+        <span className="first-text-w">Developers</span>
+      </h5>
+      <Container className="about-developer">
+        <Row>
+          {DevData.map((items) => (
+            <Col>
+              <DevCard
+                key={items.id}
+                cardHead={items.cardHead}
+                description={items.description}
+                image={items.image}
+                git={items.git}
+                linkedin={items.linkedin}
+              ></DevCard>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 }

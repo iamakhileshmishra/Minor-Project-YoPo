@@ -20,7 +20,7 @@ export default function Instructions({ currentPose }) {
                     
                 })}
             </ul>
-            <img 
+            <img  alt='pose-demo'
                 className="pose-demo-img"
                 src={poseImages[currentPose]}
             />

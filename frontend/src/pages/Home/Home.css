@@ -10,26 +10,34 @@
 .home-sub-h:hover {
   color: black;
 }
+.row-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
 body {
+  background: white;
   font-family: "Shantell Sans", cursive;
 }
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: inherit;
 }
-#Contact-Us {
-  height: 100vh;
-  width: 100vw;
+#Contact-Us{
+  height: 90vh;
+  width: 90vw;
 }
 .img-part {
-  height: 70%;
+  float: left;
   margin: 2rem;
 }
 .home-container {
   background: rgb(174, 59, 236);
+  height: 90vh;
 }
 .highlight {
   background: white;
@@ -60,6 +68,12 @@ a:hover{
 }
 .header-btn:hover {
   border-color: white;
+}
+.landing-page{
+  margin-top: 1rem;
+}
+.carousel-field{
+  margin-top: 70px;
 }
 .landing-page-content {
   text-align: center;
@@ -113,13 +127,7 @@ body::-webkit-scrollbar {
 #about-btn:hover {
   color: black;
 }
-.footer-section {
-  /* background: rgb(174, 59, 236); */
-  display: flex;
-  justify-content: center;
-  margin-top: 35px;
-  margin-bottom: 0px;
-}
+
 .opr {
   background: rgb(174, 59, 236);
   color: white;
@@ -128,17 +136,7 @@ body::-webkit-scrollbar {
   margin-right: 2rem;
   box-shadow: none;
 }
-.footer-section .btn-container {
-  display: block;
-}
 
-.footer-section .footer-text {
-  clear: both;
-}
-.btn-container {
-  text-align: center;
-  padding: 2rem;
-}
 
 .opr:hover {
   color: black;

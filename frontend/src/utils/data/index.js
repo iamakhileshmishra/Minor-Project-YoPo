@@ -49,6 +49,48 @@ export const poseInstructions = {
   ],
 };
 
+export const projdesc = [
+  "This is our project submission for the Minor Project assigned to us as a part of 6th Semester of our B.Tech Course in National Institute of technology Jamshedpur. We build a Machine Learning based WebApp which we named YoPo, Our WebApp is capable of tracking the correct Yoga Pose based on the MovNet Tensorflow model.",
+];
+
+export const images = [
+  "../../YoPo.png",
+  "../../yoga1.jpg",
+  "../../illustration1.svg",
+  "../../yoga2.jpg",
+  "../../yog3.jpg",
+];
+
+export const DevData = [
+  {
+    id: 1,
+    cardHead: "Akhilesh Kumar Mishra",
+    description: "2020UGCS053",
+    image:
+      "https://media.licdn.com/dms/image/C4D03AQE1mOUiRq0SWA/profile-displayphoto-shrink_800_800/0/1662570990820?e=2147483647&v=beta&t=D44VlGanaEpKKudn3MVRBWzqCrqU3dDBQI3UfqY4ncQ",
+    git: "https://www.github.com/iamakhileshmishra",
+    linkedin: "https://www.linkedin.com/in/iamakhileshmishra/",
+  },
+  {
+    id: 1,
+    cardHead: "Gyan Ujjawal",
+    description: "2020UGCS001",
+    image:
+      "https://media.licdn.com/dms/image/C4D03AQFqSwKDAY9Mtg/profile-displayphoto-shrink_400_400/0/1656927620305?e=1684972800&v=beta&t=cQ2931aWqGYEKgumSTXkIg737jVWQrwmuDjs4Ih9_4c",
+
+    git: "https://github.com/sKaiCzar",
+    linkedin: "https://www.linkedin.com/in/gyan-ujjwal-6a7502203/",
+  },
+  {
+    id: 1,
+    cardHead: "K. Hemanth Naik",
+    description: "2020UGCS013",
+    image:
+      "https://media.licdn.com/dms/image/D4D03AQH5Is8IvO7Xzg/profile-displayphoto-shrink_800_800/0/1679226228820?e=2147483647&v=beta&t=oxWa1A76lwe5tAsKyrUMKqfPxxu4_ZyaKeGHUy4jevQ",
+    git: "https://www.github.com/",
+    linkedin: "https://in.linkedin.com/in/karamathota-hemanth-naik-340b99238",
+  },
+];
 export const CardData = [
   {
     id: 1,

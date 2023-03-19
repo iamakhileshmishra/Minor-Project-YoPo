@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-
-import Button from "react-bootstrap/Button";
+import Carousel from "../../components/Carousel/Carousel";
+// import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Home.css";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Cards from "../../components/Cards/Cards";
+import { images } from "../../utils/data";
 import { CardData } from "../../utils/data";
 export default function Home() {
   return (
@@ -72,12 +73,8 @@ export default function Home() {
             </Col>
             <Col>
               <div className="landing-page">
-                <div>
-                  <img
-                    className="illustration"
-                    alt="landing page illustration"
-                    src="./illustration1.svg"
-                  ></img>
+                <div className="carousel-field">
+                  <Carousel images={images} />
                 </div>
               </div>
             </Col>
@@ -105,44 +102,26 @@ export default function Home() {
           ))}
         </Row>
       </div>
-      <section>
+      <Container className="mt-4">
         <div id="Contact-Us">
           <h1 className="home-sub-high" color="black">
             <sapn className="first-text-w">Contact</sapn>{" "}
             <sapn className="first-text-w">Us</sapn>
           </h1>
-          <Row>
-            <Col>
-              <div className="img-part">
-                <img
-                  src="./contact.svg"
-                  alt="contact-illustraion"
-                  height={"80%"}
-                ></img>
-              </div>
-            </Col>
-            <Col>
-              <div className="contact-form">
-                <ContactForm></ContactForm>
-              </div>
-            </Col>
-          </Row>
+
+          <div className="img-part">
+            <img
+              src="./contact.svg"
+              alt="contact-illustraion"
+              height={"400px"}
+            ></img>
+          </div>
+
+          <div className="contact-form">
+            <ContactForm></ContactForm>
+          </div>
         </div>
-      </section>
-      <div className="footer-section">
-        <div className="btn-container">
-          <Button variant="outline-primary" className="btn btns opr">
-            Open Report
-          </Button>
-          <Button variant="outline-primary" className=" btn btns opr">
-            Open Presentation
-          </Button>
-          <Button variant="outline-primary" className="btn btns opr">
-            Open Repository
-          </Button>
-        </div>
-        <div className="footer-text">{/* <p>Made With ❣️& ☕</p> */}</div>
-      </div>
+      </Container>
     </div>
   );
 }

@@ -1,31 +1,34 @@
-.about-container {
-  width: 100vw;
-  height: 100vh;
+body {
   background: rgb(174, 59, 236);
+  color: white;
+}
+.nit-logo{
+  height: 200px;
+  width: 180px;
+}
+.prof-img {
+  text-align: center;
+}
+.rule{
+  border: none;
+  height: 1px;
+  background-image: linear-gradient (to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+}
+.project-desc {
+  margin-left: 30px;
+  text-align: left;
+  font-size: 20px;
+}
+.prof-details{
+  margin: 1rem;
+}
+.home-heading{
+  margin: 10px;
 }
 .about-heading {
-  font-size: 54px;
+  font-size: 40px;
   text-align: center;
   padding-top: 10px;
-  color: white;
+  margin: 10px;
   font-family: "Raleway", sans-serif;
-}
-.about-main {
-  margin: auto;
-  width: 70%;
-}
-.about-content {
-  font-family: 'Shantell Sans', cursive;
-  color: white;
-  font-size: 18px;
-}
-.developer-info h4 {
-  color: white;
-  font-family: "Raleway", sans-serif;
-  margin-top: 20px;
-  text-decoration: underline;
-}
-.about-content a,
-.developer-info a {
-  color: white;
 }
