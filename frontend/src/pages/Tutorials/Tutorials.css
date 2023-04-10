@@ -1,24 +1,24 @@
 .tutorials-container {
-    width: 100vw;
-    height: 100vh;
-  background: rgb(174, 59, 236);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #9900ff, #cc80ff);
 }
 .tutorials-heading {
-    font-size: 54px;
-    margin-left: 100px;
-    padding-top: 50px;
-    color: white;
-    font-family: 'Raleway', sans-serif;
+  font-size: 54px;
+  margin-left: 100px;
+  padding-top: 50px;
+  color: white;
+  font-family: "Raleway", sans-serif;
 }
 
 .tutorials-content {
-    color: white;
-    font-size: 18px;
-    margin: auto;
-    margin-left: 100px;
-    margin-top: 4px;
-    font-family: 'Shantell Sans', cursive;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  margin-left: 100px;
+  margin-top: 4px;
+  font-family: "Shantell Sans", cursive;
 }
 .tutorials-content-container {
-    width: 70%;
+  width: 70%;
 }

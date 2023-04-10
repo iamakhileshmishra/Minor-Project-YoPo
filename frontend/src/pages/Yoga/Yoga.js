@@ -19,8 +19,10 @@ let poseList = [
   "Tree",
   "Chair",
   "Cobra",
-  // 'Warrior', 'Dog',
-  // 'Shoulderstand', 'Traingle'
+  "Warrior",
+  "Dog",
+  "Shoulderstand",
+  "Traingle",
 ];
 
 let interval;
@@ -48,7 +50,7 @@ function Yoga() {
     if ((currentTime - startingTime) / 1000 > bestPerform) {
       setBestPerform(timeDiff);
     }
-  }, [currentTime]);
+  }, [currentTime,bestPerform,startingTime]);
 
   useEffect(() => {
     setCurrentTime(0);
@@ -257,6 +259,7 @@ function Yoga() {
             width="640px"
             height="480px"
             style={{
+              margin: "30px",
               position: "absolute",
               left: 120,
               top: 100,
@@ -264,7 +267,7 @@ function Yoga() {
             }}
           ></canvas>
           <div>
-            <img src={poseImages[currentPose]} className="pose-img" />
+            <img src={poseImages[currentPose]} alt="pose" className="pose-img" />
           </div>
         </div>
         <button onClick={stopPose} className="secondary-btn">

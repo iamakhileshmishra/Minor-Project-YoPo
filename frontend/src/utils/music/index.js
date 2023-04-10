@@ -1,3 +1,3 @@
-import count from './count.wav'
+import count from './count.mp3'
 
 export { count }

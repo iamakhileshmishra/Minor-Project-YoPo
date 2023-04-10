@@ -1,8 +1,12 @@
 import React from "react";
+import Nav from "react-bootstrap/Nav";
+import { ref, onValue } from "firebase/database";
+import { db } from "../../firebase";
+import { AuthContext } from "../../AuthProvider";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Carousel from "../../components/Carousel/Carousel";
-// import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Home.css";
@@ -10,7 +14,35 @@ import ContactForm from "../../components/ContactForm/ContactForm";
 import Cards from "../../components/Cards/Cards";
 import { images } from "../../utils/data";
 import { CardData } from "../../utils/data";
+import { useNavigate } from "react-router-dom";
+
+import { useState, useContext, useEffect } from "react";
 export default function Home() {
+  const { currentUser } = useContext(AuthContext);
+  const [setUsername] = useState("");
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (currentUser) {
+      const starCountRef = ref(db, "users/" + currentUser.uid);
+      onValue(starCountRef, (snapshot) => {
+        if (snapshot.exists()) {
+          var data = snapshot.val();
+          setUsername(data.firstName + " " + data.lastName);
+        }
+      });
+    }
+  }, [currentUser, setUsername]);
+
+  const clickLogout = () => {
+    navigate("/login");
+    localStorage.clear();
+  };
+
+  const clickDashboard = () => {
+    navigate("/dashboard");
+  };
+  let user = localStorage.getItem("user-info");
+  // console.log(localStorage.getItem('user-info'))
   return (
     <div className="home-page">
       <div className="home-container">
@@ -22,7 +54,7 @@ export default function Home() {
           <h3 className="home-sub-h">
             <span className="first-text">A personal </span>Yoga Trainer
           </h3>
-          <nav>
+          <Nav>
             <button className="btn btns btn-secondary border-0" id="about-btn">
               <a href="#features">
                 <span className="first-text ">F</span>eatures
@@ -35,15 +67,23 @@ export default function Home() {
               </a>
             </button>
 
-            <Link to="/about">
-              <button
-                className="btn btns btn-secondary border-0"
-                id="about-btn"
-              >
+            <button className="btn btns btn-secondary border-0" id="about-btn">
+              <Link to="/about">
                 <span className="first-text ">A</span>bout
-              </button>
-            </Link>
-          </nav>
+              </Link>
+            </button>
+
+            <Nav>
+              <NavDropdown title={user} className="home-sub-h profile-sec">
+                <NavDropdown.Item onClick={clickDashboard}>
+                  Dashboard
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={clickLogout}>
+                  Logout
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Nav>
         </div>
         <Container>
           <Row>
@@ -63,9 +103,6 @@ export default function Home() {
                       <button className="btn btns start-btn">
                         Let's Start
                       </button>
-                    </Link>
-                    <Link to="/tutorials">
-                      <button className="btn btns start-btn">Tutorials</button>
                     </Link>
                   </div>
                 </div>

@@ -1,28 +1,29 @@
 body {
-  background: rgb(174, 59, 236);
+  background: linear-gradient(to right, #9900ff, #cc80ff);
   color: white;
 }
-.nit-logo{
+.nit-logo {
   height: 200px;
   width: 180px;
 }
 .prof-img {
   text-align: center;
 }
-.rule{
+.rule {
   border: none;
   height: 1px;
-  background-image: linear-gradient (to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  background-image: linear-gradient
+    (to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
 .project-desc {
   margin-left: 30px;
   text-align: left;
   font-size: 20px;
 }
-.prof-details{
+.prof-details {
   margin: 1rem;
 }
-.home-heading{
+.home-heading {
   margin: 10px;
 }
 .about-heading {

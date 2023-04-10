@@ -10,6 +10,10 @@
 .home-sub-h:hover {
   color: black;
 }
+
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+}
 .row-col {
   display: flex;
   flex-direction: column;
@@ -27,7 +31,7 @@ a {
 a:hover {
   color: inherit;
 }
-#Contact-Us{
+#Contact-Us {
   height: 90vh;
   width: 90vw;
 }
@@ -35,8 +39,22 @@ a:hover {
   float: left;
   margin: 2rem;
 }
+#profile-div {
+  margin-top: 20px;
+  background-color: #fbfbfb00;
+  outline-style: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+#profile-div:hover {
+  color: #cc80ff;
+  border: none;
+  box-shadow: none;
+}
+
 .home-container {
-  background: rgb(174, 59, 236);
+  background: linear-gradient(to right, #9900ff, #cc80ff);
   height: 90vh;
 }
 .highlight {
@@ -69,10 +87,10 @@ a:hover {
 .header-btn:hover {
   border-color: white;
 }
-.landing-page{
+.landing-page {
   margin-top: 1rem;
 }
-.carousel-field{
+.carousel-field {
   margin-top: 70px;
 }
 .landing-page-content {
@@ -129,14 +147,13 @@ body::-webkit-scrollbar {
 }
 
 .opr {
-  background: rgb(174, 59, 236);
+  background: linear-gradient(to right, #9900ff, #cc80ff);
   color: white;
   border-color: #ffa500;
   margin-left: 2rem;
   margin-right: 2rem;
   box-shadow: none;
 }
-
 
 .opr:hover {
   color: black;

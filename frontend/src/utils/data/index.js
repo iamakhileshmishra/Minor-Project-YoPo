@@ -64,15 +64,6 @@ export const images = [
 export const DevData = [
   {
     id: 1,
-    cardHead: "Akhilesh Kumar Mishra",
-    description: "2020UGCS053",
-    image:
-      "https://media.licdn.com/dms/image/C4D03AQE1mOUiRq0SWA/profile-displayphoto-shrink_800_800/0/1662570990820?e=2147483647&v=beta&t=D44VlGanaEpKKudn3MVRBWzqCrqU3dDBQI3UfqY4ncQ",
-    git: "https://www.github.com/iamakhileshmishra",
-    linkedin: "https://www.linkedin.com/in/iamakhileshmishra/",
-  },
-  {
-    id: 1,
     cardHead: "Gyan Ujjawal",
     description: "2020UGCS001",
     image:
@@ -89,6 +80,15 @@ export const DevData = [
       "https://media.licdn.com/dms/image/D4D03AQH5Is8IvO7Xzg/profile-displayphoto-shrink_800_800/0/1679226228820?e=2147483647&v=beta&t=oxWa1A76lwe5tAsKyrUMKqfPxxu4_ZyaKeGHUy4jevQ",
     git: "https://www.github.com/",
     linkedin: "https://in.linkedin.com/in/karamathota-hemanth-naik-340b99238",
+  },
+  {
+    id: 1,
+    cardHead: "Akhilesh Kumar Mishra",
+    description: "2020UGCS053",
+    image:
+      "https://media.licdn.com/dms/image/C4D03AQE1mOUiRq0SWA/profile-displayphoto-shrink_800_800/0/1662570990820?e=2147483647&v=beta&t=D44VlGanaEpKKudn3MVRBWzqCrqU3dDBQI3UfqY4ncQ",
+    git: "https://www.github.com/iamakhileshmishra",
+    linkedin: "https://www.linkedin.com/in/iamakhileshmishra/",
   },
 ];
 export const CardData = [
