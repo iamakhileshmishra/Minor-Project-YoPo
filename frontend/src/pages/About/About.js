@@ -37,14 +37,14 @@ export default function About() {
         <span className="first-text-w">Faculty</span>
       </h5>
       <Container className="about-faculty">
-        <div className="prof-img text-center">
+        {/* <div className="prof-img text-center">
           <img
             src="faculty.jpeg"
             alt="faculty-pic"
             height={"200px"}
             width={"200px"}
           ></img>
-        </div>
+        </div> */}
         <div className="prof-details">
           <h5 className="text-center">
             <a
