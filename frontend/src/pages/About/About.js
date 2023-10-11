@@ -48,11 +48,11 @@ export default function About() {
         <div className="prof-details">
           <h5 className="text-center">
             <a
-              href="https://www.nitjsr.ac.in/people/profile/CS108"
+              href="https://nitjsr.ac.in/people/profile/CS114"
               rel="noreferrer"
               target={"_blank"}
             >
-              Dr. Mantosh Biswas
+              Dr. Ashish Kumar Sahu
             </a>
           </h5>
           <h5 className="text-center">Assistant Professor </h5>

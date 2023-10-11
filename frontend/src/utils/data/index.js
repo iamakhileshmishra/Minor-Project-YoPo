@@ -50,7 +50,7 @@ export const poseInstructions = {
 };
 
 export const projdesc = [
-  "This is our project submission for the Minor Project assigned to us as a part of 6th Semester of our B.Tech Course in National Institute of technology Jamshedpur. We build a Machine Learning based WebApp which we named YoPo, Our WebApp is capable of tracking the correct Yoga Pose based on the MovNet Tensorflow model.",
+  "This is our project submission for the Major Project assigned to us as a part of 7th Semester of our B.Tech Course in National Institute of technology Jamshedpur. We build a Machine Learning based WebApp which we named YoPo, Our WebApp is capable of tracking the correct Yoga Pose based on the MovNet Tensorflow model.",
 ];
 
 export const images = [
@@ -64,20 +64,10 @@ export const images = [
 export const DevData = [
   {
     id: 1,
-    cardHead: "Gyan Ujjawal",
-    description: "2020UGCS001",
-    image:
-      "https://media.licdn.com/dms/image/C4D03AQFqSwKDAY9Mtg/profile-displayphoto-shrink_400_400/0/1656927620305?e=1684972800&v=beta&t=cQ2931aWqGYEKgumSTXkIg737jVWQrwmuDjs4Ih9_4c",
-
-    git: "https://github.com/sKaiCzar",
-    linkedin: "https://www.linkedin.com/in/gyan-ujjwal-6a7502203/",
-  },
-  {
-    id: 1,
     cardHead: "K. Hemanth Naik",
     description: "2020UGCS013",
     image:
-      "https://media.licdn.com/dms/image/D4D03AQH5Is8IvO7Xzg/profile-displayphoto-shrink_800_800/0/1679226228820?e=2147483647&v=beta&t=oxWa1A76lwe5tAsKyrUMKqfPxxu4_ZyaKeGHUy4jevQ",
+      "https://media.licdn.com/dms/image/D5635AQHYeIXHAvuomw/profile-framedphoto-shrink_400_400/0/1697048614780?e=1697655600&v=beta&t=JwO6WffjpDkewPwTUN6F6JXc4VV-BxxC5qgS7JKDCJg",
     git: "https://www.github.com/",
     linkedin: "https://in.linkedin.com/in/karamathota-hemanth-naik-340b99238",
   },
@@ -86,7 +76,7 @@ export const DevData = [
     cardHead: "Akhilesh Kumar Mishra",
     description: "2020UGCS053",
     image:
-      "https://media.licdn.com/dms/image/C4D03AQE1mOUiRq0SWA/profile-displayphoto-shrink_800_800/0/1662570990820?e=2147483647&v=beta&t=D44VlGanaEpKKudn3MVRBWzqCrqU3dDBQI3UfqY4ncQ",
+      "https://media.licdn.com/dms/image/D4D03AQFbT2bYkw7vnQ/profile-displayphoto-shrink_400_400/0/1687609548855?e=1702512000&v=beta&t=P6cKbj8-KNb2Q3mTDu8188PME9QQ3mZXdHuolUOUY3g",
     git: "https://www.github.com/iamakhileshmishra",
     linkedin: "https://www.linkedin.com/in/iamakhileshmishra/",
   },
