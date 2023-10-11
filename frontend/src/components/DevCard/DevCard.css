@@ -2,6 +2,7 @@
   margin: 2rem;
   /* display: flex; */
   height: 50vh;
+  /* width: 30vw; */
   flex-direction: column;
   align-items: center;
   background: linear-gradient(to right, #9900ff, #cc80ff);
@@ -23,5 +24,5 @@
   text-align: center;
   margin: 20px;
   height: 40%;
-  width: 50%;
+  width: 30%;
 }
