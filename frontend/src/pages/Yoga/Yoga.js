@@ -20,8 +20,8 @@ let poseList = [
   "Chair",
   "Cobra",
   "Warrior",
-  // "Dog",
-  // "Shoulderstand",
+  "Dog",
+  "Shoulderstand",
   "Traingle",
 ];
 
